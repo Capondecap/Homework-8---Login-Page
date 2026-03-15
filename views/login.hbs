@@ -1,0 +1,19 @@
+<div class="card">
+    <h2 style="margin-top:0">Sign in</h2>
+
+    {{#if error}}
+        <p class="muted" style="color:#d9534f">{{error}}</p>
+    {{/if}}
+
+    <form method="POST" action="/login">
+        <div style="margin-bottom:12px">
+            <label>Username</label>
+            <input type="text" name="username" required>
+        </div>
+        <div style="margin-bottom:14px">
+            <label>Password</label>
+            <input type="password" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</div>

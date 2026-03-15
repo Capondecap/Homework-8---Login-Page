@@ -1,0 +1,188 @@
+/* ============================= */
+/* Root Variables */
+/* ============================= */
+
+:root{
+    --max-width:1200px;
+    --radius:8px;
+    --gap:16px;
+}
+
+/* ============================= */
+/* Base / Reset */
+/* ============================= */
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+}
+
+/* ============================= */
+/* Layout */
+/* ============================= */
+
+.container{
+    max-width:var(--max-width);
+    margin:28px auto;
+    padding:0 16px;
+}
+
+/* ============================= */
+/* Navigation / Topbar */
+/* ============================= */
+
+.topbar{
+    border-bottom:1px solid var(--muted);
+    background:var(--surface);
+}
+
+.topbar .inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:12px 16px;
+}
+
+.brand{
+    font-weight:600;
+    text-decoration:none;
+    color:var(--text);
+}
+
+.nav a{
+    margin-left:12px;
+    text-decoration:none;
+    color:var(--text);
+    padding:6px 10px;
+    border-radius:6px;
+}
+
+.nav a:hover{
+    background:var(--hover);
+}
+
+/* ============================= */
+/* Buttons */
+/* ============================= */
+
+.btn{
+    border:1px solid var(--muted);
+    background:transparent;
+    padding:6px 10px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button{
+    padding:10px 14px;
+    border-radius:8px;
+    border:0;
+    background:var(--btn);
+    color:var(--btn-text);
+    cursor:pointer;
+}
+
+/* ============================= */
+/* Card Component */
+/* ============================= */
+
+.card{
+    background:var(--card);
+    border:1px solid var(--muted);
+    padding:18px;
+    border-radius:var(--radius);
+    max-width:640px;
+}
+
+/* ============================= */
+/* Forms */
+/* ============================= */
+
+label{
+    display:block;
+    margin-bottom:6px;
+    font-size:14px;
+}
+
+input[type=text],
+input[type=password]{
+    width:100%;
+    padding:10px;
+    border:1px solid var(--muted);
+    border-radius:6px;
+    background:transparent;
+    color:var(--text);
+}
+
+/* ============================= */
+/* Profile */
+/* ============================= */
+
+.profile-row{
+    display:flex;
+    gap:16px;
+    align-items:center;
+}
+
+.avatar{
+    width:72px;
+    height:72px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--muted);
+    color:var(--surface);
+    font-weight:700;
+}
+
+/* ============================= */
+/* Text Utilities */
+/* ============================= */
+
+.muted{
+    color:var(--muted);
+}
+
+.subtle{
+    color:var(--subtext);
+}
+
+.spacer{
+    height:16px;
+}
+
+/* ============================= */
+/* Theme Variables */
+/* ============================= */
+
+body.light{
+    --bg:#fafafa;
+    --surface:#ffffff;
+    --card:#ffffff;
+    --text:#0f172a;
+    --muted:#e6e9ef;
+    --hover:#f4f6fb;
+    --btn:#111827;
+    --btn-text:#ffffff;
+    --subtext:#374151;
+}
+
+body.dark{
+    --bg:#0f172a;
+    --surface:#141821;
+    --card:#121219;
+    --text:#e6eef8;
+    --muted:#1b2130;
+    --hover:#111317;
+    --btn:#3b82f6;
+    --btn-text:#fff;
+    --subtext:#9fb2cf;
+}

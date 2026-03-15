@@ -1,0 +1,16 @@
+{
+  "admin": {
+    "username": "admin",
+    "password": "password123",
+    "fullName": "System Administrator",
+    "email": "admin@university.edu",
+    "bio": "Managing the campus network infrastructure."
+  },
+  "student_dev": {
+    "username": "Bunhour",
+    "password": "Bunhourpass",
+    "fullName": "Long Bunhour",
+    "email": "2023145long@aupp.edu.kh",
+    "bio": "Heavy coffee drinker."
+  }
+}
